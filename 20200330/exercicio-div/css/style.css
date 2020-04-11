@@ -1,0 +1,61 @@
+
+body{
+  background-image: url(../img/fundo.jpg);
+  background-size: cover;
+  font-family: calibri, tahoma, arial;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+h1{
+  color: #FFFFFF;
+  font-size: 50px;
+}
+
+.conteudo-principal{
+  width: 1200px;
+  margin: 0px auto;
+}
+
+.elementos{
+  background-color: #FFFFFF;
+  text-align: justify;
+  border: 1px solid #CCCCCC;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.tracejado{
+  margin: 0px;
+  border-bottom: 1px dashed #7E9F19;
+}
+
+a{
+  color: #2C88A7;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.textAlinhadoDireita{
+    margin: 0;
+    text-align: right;
+}
+
+a:hover{
+  color: #DC143C;
+}
+
+img{
+  width: 120px;
+  height: 150px;
+  border: 1px solid #7E9F19;
+  margin: 10px 10px 0 0; /* No PDF está escrito: Deve também ter margem superior e direita em 10px e inferior e esquerda em 0. */
+  padding: 2px;
+  float: left;
+}
+
+.ultimoElemento{
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+}

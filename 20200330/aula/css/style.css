@@ -1,0 +1,106 @@
+/* Fonte do google sendo referenciada */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Sen&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #5d1ff6;
+}
+
+.conteudo-principal{
+  width: 1200px;
+  height: auto;
+  border: 1px solid #4d1ea6;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.elementos{
+  width: 1100px;
+  height: auto;
+  background: #8cc7fe;
+  margin: 10px auto;
+  text-align: left;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 30px;
+}
+
+.elementos h2{
+  font-size: 30px;
+  color: #7d0096;
+}
+
+.elementos p{
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.caixa{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  float: left;
+  margin: 10px 20px 20px 18px;
+}
+
+.fundoCor{
+  background-color: #7ff5dc;
+}
+
+.fundoImagem{
+  background: url(../images/icone.png);
+}
+
+.fundoImagemNaoRepete {
+  background-repeat: no-repeat;
+}
+
+.fundoImagemRepeteX{
+  background-repeat: repeat-x;
+}
+
+.fundoImagemRepeteY{
+  background-repeat: repeat-y;
+}
+
+.fundoImagemPosicao1{
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fundoImagemPosicao2{
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.fundoImagemPosicao3{
+  background-repeat: no-repeat;
+  background-position: 5% bottom;
+}
+
+.fundoImagemPosicao4{
+  background-repeat: no-repeat;
+  background-position: 25px center;
+}
+
+.banner {
+  clear: both;
+  width: 1160px;
+  height: 350px;
+  border: 1px solid #000;
+  margin: 10px auto;
+  background: url(../images/banner3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.rodape{
+  background: #1f74c3;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+
+}
