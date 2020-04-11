@@ -1,0 +1,24 @@
+/* criando as divs com class */
+p {
+    background: #ccc;
+}
+body {
+  background: #171717;
+}
+
+h1, h2 {
+  color: #ffffff;
+}
+
+.caixas {
+  width: relative;
+  background: #ed175d;
+  border: 10px solid #ccc;
+  margin: 50px;
+  position: relative;
+  text-align: center;
+}
+
+.sem-float {
+  clear: both;
+}

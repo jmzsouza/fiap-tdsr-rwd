@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow|Sen&display=swap');
+
+body {
+	background-color:#171717;
+}
+
+div {
+	margin: 0 20px 0 20px;
+}
+
+h1, h2 {
+	color:#ed175d;
+	text-transform: uppercase;
+	font-family: 'Barlow', sans-serif;
+}
+
+p {
+	color:#adadad;
+	font-family: 'Sen', sans-serif;
+	text-align: justify;
+}
+
+strong {
+	color:#ed175d;
+}
+
+figure {
+	display: inline-block;
+	margin: 10px;
+	padding: 5px;
+}
+
+figcaption {
+	color:#adadad;
+	font-family: 'Sen', sans-serif;
+	font-size: 0.7em;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #adadad;
+}
+
+a:hover {
+	color: #ed175d;
+	font-size: 1em;
+}
+
+li {
+	color:#adadad;
+	font-family: 'Sen', sans-serif;
+}
+
+.image {
+	display: inline-block;
+	max-width: 300px;
+	transition: .3s;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray; 
+}
+
+.image:hover {
+	border: solid;
+	border-color: #ed175d;	
+	-webkit-filter: none;
+	filter: none;
+}
