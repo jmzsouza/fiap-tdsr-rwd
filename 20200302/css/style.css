@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap');
+
+body{
+background: rgba(0, 179, 131, 0.85);
+}
+
+p{
+color:#fff;
+font-size: 20px;
+font-family: 'Montserrat', "Lato" ;
+
+}
