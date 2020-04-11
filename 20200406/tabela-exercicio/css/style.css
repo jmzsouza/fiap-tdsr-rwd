@@ -1,0 +1,57 @@
+/* requisitando fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #c9b9b6;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #781243;
+}
+
+.coluna-img {
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  height: 125px;
+}
+
+.conteudo-tabela {
+  margin: 10px auto;
+  width: 900px;
+  font-size: 18px;
+  color: #3e1731;
+  align: center;
+  border-collapse: collapse;
+}
+
+.background-thead-tfoot {
+  background-color: #583e4e;
+  color: #fff;
+}
+
+.conteudo-tabela th,
+.conteudo-tabela td {
+  padding: 15px;
+  border: 1px solid #af9ba5;
+}
+
+.conteudo-tabela tbody tr:nth-child(odd) {
+  background: #e3cec3;
+}
+
+.conteudo-tabela tbody tr:hover {
+  color: #583e4e;
+  font-weight: 900;
+}
+
+.conteudo-tabela tfoot {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+}

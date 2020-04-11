@@ -1,0 +1,54 @@
+/* requisitando fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+body {
+  font-family: 'Gotu', sans-serif;
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
+  color: rgb(42, 98, 172);
+}
+
+.conteudo-tabela{
+  margin: 10px auto;
+  width: 800px;
+  font-size: 18px;
+  border-collapse: collapse;
+}
+
+.conteudo-tabela thead tr{
+  background: rgb(42, 98, 172);
+  color: #fff;
+  text-align: left;
+  border: 1px;
+}
+
+.conteudo-tabela th,
+.conteudo-tabela td{
+  padding: 15px;
+}
+
+.conteudo-tabela tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+
+.conteudo-tabela tbody tr:nth-child(even){
+  background: #f9f9f9;
+}
+
+.conteudo-tabela tbody tr:last-child{
+  border-bottom: 20px solid rgb(42, 98, 172);
+}
+
+.conteudo-tabela tbody tr:hover{
+  color: rgb(42, 98, 172);
+  font-weight: 900;
+}
+
+.conteudo-tabela tfoot{
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+}

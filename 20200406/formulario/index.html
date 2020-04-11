@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulários em HTML5</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <h1>Usando Formulários</h1>
+    <!-- inserior form - atributos
+    id / name - identificar o formulário - o mesmo valor para os dois
+    method - define o tipo de método que será usado para enviar as informações
+          get - padrão
+                Os dados são enviados no campo de url
+                tem o limite de 256 caracteres por campo
+                busca - link autom.
+
+          post - os dados são enviados encapsulados nos campos do form
+                não tem limites de caracteres
+                dados - login - compra
+
+    action -  define o que vai acontecer quando o botão  de envio(submit) for clicado
+    as informações preenchidas serão enviadas: Banco de dados - E-mail - Para outra página -
+    lugar nenhum. Dentro da action  você definirá quem irá cuidar dos dados digitados -
+    script ou alguma linguaguem - passa o endereço da quem vai tratar os dados -->
+
+    <!-- início do form -->
+    <form action="" method="post" id="dados">
+      <!-- organizar conteúdo de formulário -->
+      <fieldset>
+        <legend>Campos comuns em qualquer HTML</legend>
+
+        <!-- campo de texto
+          type text - caixa de texto - qualquer valor
+          name - usa-se em Java - JSP
+          id - usa-se no javascript
+          value - campo que será preenchido pelo usuário
+          placeholder - uma sugestão de preenchimento, cuidado com redundância
+          maxlength - tamanho máximo de caracteres
+          autofocus - foco automatico no campo - usar apenas em 1
+          label - rotulo que irá aparecer na tela - o atributo for indica qual o campo
+          deve ganhar foco quando ele for pressionado, ele saberá o campo correto do id correspondente.
+      -->
+        <p>
+          <label for="usuario">Usuário</label>
+          <input type="text" id="usuario" name="usuario" placeholder="Ex. João Paulo" maxlength="20" autofocus>
+        </p>
+
+        <!-- campo de senha -->
+        <p>
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" placeholder="Ex: 1234" maxlength="20">
+        </p>
+
+        <!-- campo de seleção unico - radio -->
+        <p>
+          <label for="">Selecione sua formação:</label>
+          <input type="radio" id="formacao1" name="formacao" value="1">
+          <label for="formacao1">Ensino Médio</label>
+
+          <input type="radio" id="formacao2" name="formacao" value="2">
+          <label for="formacao2">Ensino Superior</label>
+
+          <input type="radio" id="formacao3" name="formacao" value="3">
+          <label for="formacao3">Pós Graduação</label>
+
+          <input type="radio" id="formacao4" name="formacao" value="4">
+          <label for="formacao4">Mestrado</label>
+
+          <input type="radio" id="formacao5" name="formacao" value="5">
+          <label for="formacao5">Doutorado</label>
+        </p>
+
+        <!-- campos de seleção multiplos
+          checkbox - selecionar quantos forem necessários
+          ckecked - inicia selecionado -->
+        <label>Áreas de interesse:</label><br>
+        <input type="checkbox" name="interesse" id="interesse1" value="1" ckecked>
+        <label for="interesse1">Desenvolvimento Web</label>
+
+        <input type="checkbox" name="interesse" id="interesse2" value="2" ckecked>
+        <label for="interesse2">Banco de Dados</label>
+
+        <input type="checkbox" name="interesse" id="interesse3" value="3" ckecked>
+        <label for="interesse3">Java</label>
+
+        <!-- selecao - caixa suspensa - dropdown - não é input     -->
+
+        <p>
+          <label>Estado Cívil:</label>
+          <select name="civil" id="civil">
+            <option select disabled>Selecione sua opção</option>
+            <option value="0">Solteiro</option>
+            <option value="1">Casado</option>
+            <option value="2">Separado</option>
+            <option value="3">Outros</option>
+          </select>
+        </p>
+
+        <!-- selecao para envio de arquivo -->
+        <p>
+          <label for="arquivo">Envie seu arquivo:</label>
+          <input type="file" id="arquivo">
+        </p>
+
+        <!-- texto de varias linhas -->
+        <p>
+          <label for="">Envia seu comentário:</label><br>
+          <textarea name="name" placeholder="Seu comentário..."></textarea>
+        </p>
+
+      </fieldset>
+
+    </form>
+    <!-- fim do form -->
+  </body>
+</html>
