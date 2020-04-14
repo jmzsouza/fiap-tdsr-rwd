@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Formulários em HTML5</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    <h1>Usando Formulários</h1>
-    <!-- inserior form - atributos
+
+<head>
+  <meta charset="utf-8">
+  <title>Formulários em HTML5</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <h1>Usando Formulários</h1>
+  <!-- Inserior form - atributos
     id / name - identificar o formulário - o mesmo valor para os dois
     method - define o tipo de método que será usado para enviar as informações
           get - padrão
@@ -24,13 +26,13 @@
     lugar nenhum. Dentro da action  você definirá quem irá cuidar dos dados digitados -
     script ou alguma linguaguem - passa o endereço da quem vai tratar os dados -->
 
-    <!-- início do form -->
-    <form action="" method="post" id="dados">
-      <!-- organizar conteúdo de formulário -->
-      <fieldset>
-        <legend>Campos comuns em qualquer HTML</legend>
+  <!-- Início do form -->
+  <form action="" method="post" id="dados">
+    <!-- organizar conteúdo de formulário -->
+    <fieldset>
+      <legend>Campos comuns em qualquer HTML</legend>
 
-        <!-- campo de texto
+      <!-- Campo de texto
           type text - caixa de texto - qualquer valor
           name - usa-se em Java - JSP
           id - usa-se no javascript
@@ -40,78 +42,195 @@
           autofocus - foco automatico no campo - usar apenas em 1
           label - rotulo que irá aparecer na tela - o atributo for indica qual o campo
           deve ganhar foco quando ele for pressionado, ele saberá o campo correto do id correspondente.
+          required - transforma o campo em preenchimento obrigatório
       -->
-        <p>
-          <label for="usuario">Usuário</label>
-          <input type="text" id="usuario" name="usuario" placeholder="Ex. João Paulo" maxlength="20" autofocus>
-        </p>
+      <p>
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ex. João Paulo" maxlength="20" autofocus required>
+      </p>
 
-        <!-- campo de senha -->
-        <p>
-          <label for="senha">Senha:</label>
-          <input type="password" id="senha" name="senha" placeholder="Ex: 1234" maxlength="20">
-        </p>
+      <!-- Campo de senha -->
+      <p>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Ex: 1234" maxlength="20">
+      </p>
 
-        <!-- campo de seleção unico - radio -->
-        <p>
-          <label for="">Selecione sua formação:</label>
-          <input type="radio" id="formacao1" name="formacao" value="1">
-          <label for="formacao1">Ensino Médio</label>
+      <!-- Campo de seleção unico - radio -->
+      <p>
+        <label for="">Selecione sua formação:</label>
+        <input type="radio" id="formacao1" name="formacao" value="1">
+        <label for="formacao1">Ensino Médio</label>
 
-          <input type="radio" id="formacao2" name="formacao" value="2">
-          <label for="formacao2">Ensino Superior</label>
+        <input type="radio" id="formacao2" name="formacao" value="2">
+        <label for="formacao2">Ensino Superior</label>
 
-          <input type="radio" id="formacao3" name="formacao" value="3">
-          <label for="formacao3">Pós Graduação</label>
+        <input type="radio" id="formacao3" name="formacao" value="3">
+        <label for="formacao3">Pós Graduação</label>
 
-          <input type="radio" id="formacao4" name="formacao" value="4">
-          <label for="formacao4">Mestrado</label>
+        <input type="radio" id="formacao4" name="formacao" value="4">
+        <label for="formacao4">Mestrado</label>
 
-          <input type="radio" id="formacao5" name="formacao" value="5">
-          <label for="formacao5">Doutorado</label>
-        </p>
+        <input type="radio" id="formacao5" name="formacao" value="5">
+        <label for="formacao5">Doutorado</label>
+      </p>
 
-        <!-- campos de seleção multiplos
+      <!-- Campos de seleção multiplos
           checkbox - selecionar quantos forem necessários
           ckecked - inicia selecionado -->
-        <label>Áreas de interesse:</label><br>
-        <input type="checkbox" name="interesse" id="interesse1" value="1" ckecked>
-        <label for="interesse1">Desenvolvimento Web</label>
+      <label>Áreas de interesse:</label><br>
+      <input type="checkbox" name="interesse" id="interesse1" value="1" ckecked>
+      <label for="interesse1">Desenvolvimento Web</label>
 
-        <input type="checkbox" name="interesse" id="interesse2" value="2" ckecked>
-        <label for="interesse2">Banco de Dados</label>
+      <input type="checkbox" name="interesse" id="interesse2" value="2" ckecked>
+      <label for="interesse2">Banco de Dados</label>
 
-        <input type="checkbox" name="interesse" id="interesse3" value="3" ckecked>
-        <label for="interesse3">Java</label>
+      <input type="checkbox" name="interesse" id="interesse3" value="3" ckecked>
+      <label for="interesse3">Java</label>
 
-        <!-- selecao - caixa suspensa - dropdown - não é input     -->
+      <!-- Selecao - caixa suspensa - dropdown - não é input     -->
 
-        <p>
-          <label>Estado Cívil:</label>
-          <select name="civil" id="civil">
-            <option select disabled>Selecione sua opção</option>
-            <option value="0">Solteiro</option>
-            <option value="1">Casado</option>
-            <option value="2">Separado</option>
-            <option value="3">Outros</option>
-          </select>
-        </p>
+      <p>
+        <label>Estado Cívil:</label>
+        <select name="civil" id="civil">
+          <option select disabled>Selecione sua opção</option>
+          <option value="0">Solteiro</option>
+          <option value="1">Casado</option>
+          <option value="2">Separado</option>
+          <option value="3">Outros</option>
+        </select>
+      </p>
 
-        <!-- selecao para envio de arquivo -->
-        <p>
-          <label for="arquivo">Envie seu arquivo:</label>
-          <input type="file" id="arquivo">
-        </p>
+      <!-- Selecao para envio de arquivo -->
+      <p>
+        <label for="arquivo">Envie seu arquivo:</label>
+        <input type="file" id="arquivo">
+      </p>
 
-        <!-- texto de varias linhas -->
-        <p>
-          <label for="">Envia seu comentário:</label><br>
-          <textarea name="name" placeholder="Seu comentário..."></textarea>
-        </p>
+      <!-- Texto de varias linhas -->
+      <p>
+        <label for="">Envie seu comentário:</label><br>
+        <textarea name="name" placeholder="Seu comentário..."></textarea>
+      </p>
 
-      </fieldset>
+    </fieldset>
+    <!-- Controles antigos -->
 
-    </form>
-    <!-- fim do form -->
-  </body>
+    <!-- Controles do HTML5 -->
+    <fieldset>
+      <legend>Controles Formulário HTML5</legend>
+
+      <!-- Campo de data -->
+      <p>
+        <label for="data">Data da entrega</label>
+        <input type="date" id="data">
+      </p>
+
+      <!-- Campo de hora -->
+      <p>
+        <label for="hora">Horário</label>
+        <input type="time" id="hora">
+      </p>
+
+      <!-- Campo de data e hora -->
+      <p>
+        <label for="dataHora">Data e hora da entrega</label>
+        <input type="datetime-local" id="dataHora">
+      </p>
+
+      <!-- Campo de mês -->
+      <p>
+        <label for="mes">Mês</label>
+        <input type="month-local" id="mes">
+      </p>
+
+      <!-- Campo de semana -->
+      <p>
+        <label for="semana">Semana</label>
+        <input type="week" id="semana">
+      </p>
+
+      <!-- Campo para números -->
+      <p>
+        <label for="numeros">Números</label>
+        <input type="number" id="numeros">
+      </p>
+
+      <!-- Campo para números com escala de valores
+              min - número mínimo - inicial
+              max - número máximo - final
+              step - variação do número
+      -->
+      <p>
+        <label for="numeros1">Números com escala</label>
+        <input type="number" id="numeros1" min="10" max="100" step="10">
+      </p>
+
+      <!-- Gera uma barra onde podemos arrastar para exibir valores
+              min - número mínimo - inicial
+              max - número máximo - final
+              step - variação do número
+      -->
+      <p>
+        <label for="barra">Barra de valor</label>
+        <input type="range" id="barra" min="10" max="100" step="10">
+      </p>
+
+      <!-- Campo de texto para digitação de telefone
+              em Smartphone abre o teclado númerico-->
+      <p>
+        <label for="fone">Campo de telefone</label>
+        <input type="tel" id="fone">
+      </p>
+
+      <!-- Campo para digitação de email - Em smartphone abre o teclado
+        com o caracter @. Também pode ajudar o usuário no preenchimento
+        de um endereço, pois ele "válida" o campo-->
+      <p>
+        <label for="email">Campo de email</label>
+        <input type="email" id="email" required>
+      </p>
+
+      <!-- Campo para digitação de url (endereços) -->
+      <p>
+        <label for="endereco">Url</label>
+        <input type="url" id="endereco">
+      </p>
+
+      <!-- Campo de Search - campo para a barra de pesquisa da página -->
+      <p>
+        <label for="busca">Search</label>
+        <input type="search" id="busca">
+      </p>
+
+      <!-- Campo de Color - abrir o gerenciador de cores do SO. -->
+      <p>
+        <label for="cor">Cores</label>
+        <input type="color" id="cor">
+      </p>
+
+    </fieldset>
+
+    <!-- Botões -->
+    <p>
+      <!-- botao de envio -->
+      <input type="submit" name="" value="Enviar">
+      <!-- botão de reset -->
+      <input type="reset" name="" value="Limpar">
+      <!-- botão para chamar um JS -->
+      <input type="button" name="" value="Chamar JS">
+    </p>
+
+    <p>
+      <!-- botao de envio -->
+      <button type="submit" name="button">Enviar</button>
+      <!-- botão de reset -->
+      <button type="reset" name="button">Limpar</button>
+      <!-- botão para chamar um JS -->
+      <button type="button" name="button">Chamar JS</button>
+    </p>
+
+  </form>
+  <!-- Fim do form -->
+</body>
+
 </html>
