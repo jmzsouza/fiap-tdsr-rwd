@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* representa que essa regra será aplicada a todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #f9f9f9;
+}
+
+.container {
+  width: 80%;
+  min-width: 800px;
+  height: 600px;
+  margin: 10px auto;
+  background: #fff;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary, .secondary {
+  width: 60%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary {
+  width: 40%;
+  background: #dc143c;
+  border-radius: 7px 0 0 7px;
+  color: #fff;
+  flex
+}
+
+.primary h2 {
+  margin: 20px 0 40px;
+}
+
+.icone {
+  font-size: 300px;
+  padding: 20px 0;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.rede-social {
+  color: #fff;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.rede-social:hover {
+  color: #aa0a2a;
+}
+
+/* ------------FORMULARIO------------ */
+#contato {
+  width: 100%;
+  padding: 25px;
+  margin: 50px 0;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 10px;
+}
+
+#contato input[type="text"],
+#contato input[type="email"],
+#contato input[type="tel"],
+#contato textarea {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  width: 100%;
+  margin: 5px;
+  height: 60px;
+  padding: 10px 10px 10px 50px;
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  border: 1px solid #ccc;
+}
+
+#contato textarea {
+  height: 150px;
+  resize: none;
+  padding-left: 15px;
+}
+
+#contato input:focus,
+#contato textarea:focus {
+  outline: 0;
+  border: 1px solid #aa0a2a;
+}
+
+#contato button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background: #dc143c;
+  color: #fff;
+  font-weight: 700;
+  float: right;
+  cursor: pointer;
+}
+
+#contato button:hover {
+  background: #aa0a2a;
+}
+
+.user {
+  background: url(../images/user2.png);
+}
+
+.email {
+  background: url(../images/email2.png);
+}
+
+.celular {
+  background: url(../images/celular2.png);
+}
+
+.fone {
+  background: url(../images/telefone2.png);
+}
+
+.user:focus {
+  background: url(../images/user1.png);
+}
+
+.email:focus {
+  background: url(../images/email1.png);
+}
+
+.celular:focus {
+  background: url(../images/celular1.png);
+}
+
+.fone:focus {
+  background: url(../images/telefone1.png);
+}

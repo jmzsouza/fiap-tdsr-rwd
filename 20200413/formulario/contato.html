@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contato</title>
+  <!-- Requisicao da fonte awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <!-- Meu css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Container principal - todo o conteudo -->
+  <div class="container">
+    <!-- Primeiro conteúdo - ICONES -->
+    <div class="primary">
+      <h2>Formulário de contato</h2>
+      <!-- Icone de fonte awesome
+            a class 'icone'' irá formatar esse elemento-->
+      <span class="fas fa-universal-access icone"></span>
+
+      <!-- Icones de redes sociais -->
+      <p>
+        <a href="#"><span class="fab fa-instagram rede-social"></span></a>
+        <a href="#"><span class="fab fa-facebook rede-social"></span></a>
+        <a href="#"><span class="fab fa-twitter rede-social"></span></a>
+        <a href="#"><span class="fab fa-youtube rede-social"></span></a>
+      </p>
+    </div>
+    <!-- Fim do primeiro conteúdo -->
+
+    <!-- Segundo conteúdo - FORM -->
+    <div class="secondary">
+      <form id="contato" method="post">
+
+        <fieldset>
+          <input type="text" id="nome" placeholder="Seu nome" class="user" required autofocus>
+        </fieldset>
+
+        <fieldset>
+          <input type="email" id="email" placeholder="Seu email" class="email" required>
+        </fieldset>
+
+        <fieldset>
+          <input type="tel" id="fone" placeholder="Seu telefone" class="fone" required>
+        </fieldset>
+
+        <fieldset>
+          <input type="tel" id="celular" placeholder="Seu celular" class="celular" required>
+        </fieldset>
+
+        <fieldset>
+          <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <button type="submit" id="botao">Enviar</button>
+        </fieldset>
+
+      </form>
+      <!-- fim do segundo conteudo - FORM -->
+    </div>
+    <!-- Fim da segunda divisão -->
+
+  </div>
+  <!-- Fim do container principal -->
+
+</body>
+
+</html>
