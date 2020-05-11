@@ -1,0 +1,20 @@
+/*
+   display: inline;
+   os elementos fiquem um ao lado do outro
+   mas ele ignora o tamanho do elemento (width - height)
+   o elemento fica maior conforme o seu conteúdo
+*/
+
+.box{
+  display: inline;
+  width: 20%;
+  min-width:  200px;
+  height: 200px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.box-1{background: #666;}
+.box-2{background: #888;}
+.box-3{background: #aaa;}
+.box-4{background: #ccc;}

@@ -1,0 +1,23 @@
+/*
+   flex-basis
+   define o tamanho do elemento antes da distribuição do espaço do que sobrar do pai. Caso você não defina, quado usar o grow ele fara a atribuição automática, demais elementos terão tamanhoi definido pelo conteúdo
+
+  */
+
+.container{
+    display: flex;
+    flex-direction: row;
+  }
+
+.box{
+  /* width: 10%;
+  min-width: 200px;*/
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.box-1{background: #666; flex-basis: 90px;}
+.box-2{background: #888; flex-grow: 1;}
+.box-3{background: #aaa; flex-basis: 190px;}
+.box-4{background: #ccc; flex-grow: 2;}

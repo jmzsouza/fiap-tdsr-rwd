@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* mini reset css
+  * asterisco representa todos os elementos - todos usarão a regra abaixo
+  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3{
+  margin: 20px 10px;
+}
+
+.container{
+  /* medida faz relação com elemeto pai - dimensão do pai */
+  width: 99%;
+  height: 400px;
+  margin: 10px auto;
+  padding: 10px;
+  background: #f9f9f9;
+}

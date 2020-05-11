@@ -1,0 +1,34 @@
+/*
+   Flex-grow
+   Define que um elemento seja maior que os outros(largura). O valor padrão é 0, assim ocupam um tamanho máximo baseado no conteúdo ou larguira. No nosso exemplo quatro elementos, vamos aplicar flex-grow: 1 em tres e o outro com flex-grow: 2. Ele tentará ocupar 2 vezes mais espaço que os outros elementos.
+
+   flex-grow: 0;
+   Os elementos naõ se expandem para ocuopar todo o pai - PADRAZÃO
+
+   flex-grow: 1;
+   Os elementps se expandem igualmente para ocupar todo o pai, isso de forma igual.
+
+  flex-grow: 2;
+  vai tentar ocupar o dobro em relação aos elementos que tem o valor 1
+
+  COMENTEM A LARGURA
+
+  */
+
+.container{
+    display: flex;
+    flex-direction: row;
+  }
+
+.box{
+  /* width: 10%;
+  min-width: 200px;*/
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.box-1{background: #666; flex-grow: 1;}
+.box-2{background: #888; flex-grow: 2;}
+.box-3{background: #aaa; flex-grow: 2;}
+.box-4{background: #ccc; flex-grow: 1;}

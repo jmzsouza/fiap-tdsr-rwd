@@ -1,0 +1,22 @@
+/*
+   space-between - cria um espaçamento entre os elementos começa pelo meio do container. Sendo assim o espaçamento do meio sempre será maior do que do início do fim
+  */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box{
+  width: 10%;
+  min-width: 200px;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.box-1{background: #666;}
+.box-2{background: #888;}
+.box-3{background: #aaa;}
+.box-4{background: #ccc;}

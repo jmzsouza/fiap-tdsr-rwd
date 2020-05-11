@@ -1,0 +1,23 @@
+/*
+   order
+   define a ordem de exibição dos filhos no elemento pai. É uma forma de modificar conteúdo sem alterar HTML, ordem de posicionamento
+
+  */
+
+.container{
+    display: flex;
+    flex-direction: row;
+  }
+
+.box{
+  width: 10%;
+  min-width: 200px;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.box-1{background: #666; order: 3;}
+.box-2{background: #888; order: 1;}
+.box-3{background: #aaa; order: 4;}
+.box-4{background: #ccc; order: 2;}

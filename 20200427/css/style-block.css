@@ -1,0 +1,19 @@
+/* por padrão divs são elementos de block - ocupam todo o espaço, não permitem que ninguém fique ao seu lado
+propriedade display - ela controla a exibição nesse caso
+display: block; - NÃO PRECISA POIS JÁ É O PADRÃO
+*/
+/* classe mais generalista - todas as formatações ques os boxes devem ter */
+.box{
+  display: block;
+  width: 20%;
+  min-width:  200px;
+  height: 200px;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* classes mais especialistas - formatações diferentes */
+.box-1{background: #666;}
+.box-2{background: #888;}
+.box-3{background: #aaa;}
+.box-4{background: #ccc;}

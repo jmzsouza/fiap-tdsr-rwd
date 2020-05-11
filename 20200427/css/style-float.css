@@ -1,0 +1,23 @@
+/*
+   float: valor;
+   permite a flutuação do elemento à esquerda/direita - o elemento sai do seu fluxo normal, o grande problema é que quando usamos float e temos espaço o próximo(s) elemento(s) também terão esse comportamento. Nesse caso nosso elemento h2 saiu do fluxo normal.
+
+   Para resolver temos de limpar o float no próximo elemento, basta usar a propriedade clear: valor; (left / right / both). No nosso exemplo essa propriedade será aplicada ao primeiro elemento h2
+*/
+
+.box{
+  float: left;
+  display: block;
+  width: 20%;
+  min-width:  200px;
+  height: 200px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.no-float{clear: both;}
+
+.box-1{background: #666;}
+.box-2{background: #888;}
+.box-3{background: #aaa;}
+.box-4{background: #ccc;}

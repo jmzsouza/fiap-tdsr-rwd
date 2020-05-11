@@ -1,0 +1,24 @@
+/*
+   flex-direction: column;
+   os elementos ficam um abaixo do outro só que alinhados em posição invertida dos elementos
+*/
+
+.container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.box{
+  width: 10%;
+  min-width:  200px;
+  height: 200px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.no-float{clear: both;}
+
+.box-1{background: #666;}
+.box-2{background: #888;}
+.box-3{background: #aaa;}
+.box-4{background: #ccc;}

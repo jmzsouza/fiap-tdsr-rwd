@@ -1,0 +1,19 @@
+/*
+   display: inline-block;
+   ele deixará o elemento inline com as propriedades do bloco, respeita largura e altura. O problema é que elementos inline são considerados texto, e o texto terá um espaçamento que não existe(enter). Código mimificados não apresentam esse probleminha. Conforme você aumenta a quantidade de conteúdo o container saí do fluxo(mais) e os mais baixos.
+   AInda não é uma boa.
+*/
+
+.box{
+  display: inline-block;
+  width: 20%;
+  min-width:  200px;
+  height: 200px;
+  /* margin: 20px;
+  padding: 10px; */
+}
+
+.box-1{background: #666;}
+.box-2{background: #888;}
+.box-3{background: #aaa;}
+.box-4{background: #ccc;}
