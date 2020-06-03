@@ -1,0 +1,32 @@
+
+.quadrado{
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+}
+
+.primeiro {
+  background: rgb(164, 23, 46);
+  /* position: relative;
+  left: 100px;
+  top: 50px; */
+}
+
+.segundo {
+  background: rgb(20, 150, 156);
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+}
+
+.terceiro {
+  background: rgb(46, 45, 61);
+  position: relative;
+}
+
+.interno {
+  background: #f60;
+  position: absolute;
+  top: 150px;
+  right: 0;
+}

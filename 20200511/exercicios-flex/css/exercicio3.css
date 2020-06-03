@@ -1,0 +1,108 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  height: 100vh;
+  margin: 0 auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.primeiro {
+  height: 10%;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.primeiro-caixa1 {
+  width: 80%;
+  margin: 1%;
+  border: 1px solid black;
+}
+
+.primeiro-caixa2 {
+  width: 17%;
+  margin: 1%;
+  border: 1px solid black;
+}
+
+.segundo {
+  height: 5%;
+  margin: 1%;
+  border: 1px solid black;
+}
+
+.terceiro {
+  height: 30%;
+  margin: 1%;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.terceiro-caixa1 {
+  width: 60%;
+  height: 95%;
+  margin: 1%;
+  border: 1px solid black;
+}
+
+.terceiro-caixa2 {
+  width: 17%;
+  height: 38%;
+  margin: 1%;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quarto {
+  height: 5%;
+  margin: 1%;
+  border: 1px solid black;
+}
+
+.quinto {
+  height: 30%;
+  margin: 1%;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quinto-caixa1 {
+  width: 17%;
+  height: 38%;
+  margin: 1%;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quinto-caixa2 {
+  width: 60%;
+  height: 95%;
+  margin: 1%;
+  border: 1px solid black;
+}
+
+.sexto {
+  height: 10%;
+  margin: 1%;
+  border: 1px solid black;
+}

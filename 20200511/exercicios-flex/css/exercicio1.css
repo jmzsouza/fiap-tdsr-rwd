@@ -1,0 +1,81 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  height: 100vh;
+  margin: 0 auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.primeiro {
+  height: 10%;
+  margin: 1%;
+  border: 1px solid black;
+}
+
+.segundo {
+  height: 20%;
+  margin: 1%;
+  padding: 1%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.segundo-caixa1 {
+  width: 20%;
+  margin: 1%;
+  border: 1px solid black;
+}
+
+.segundo-caixa2 {
+  width: 80%;
+  margin: 1%;
+  padding: 1%;
+  border: 1px solid black;
+}
+
+.terceiro {
+  height: 35%;
+  margin: 1%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.terceiro-caixa {
+  width: 25%;
+  margin: 2%;
+  border: 1px solid black;
+}
+
+.quarto {
+  height: 25%;
+  margin: 1%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.quarto-caixa1 {
+  width: 25%;
+  margin: 1%;
+  border-right: 1px solid black;
+}
+
+.quarto-caixa2 {
+  width: 50%;
+  margin: 1%;
+  border-right: 1px solid black;
+}
+
+.quarto-caixa3 {
+  width: 25%;
+}
