@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: calibri, tahoma, verdana;
+  font-size: 16px;
+}
+
+.cabecalho {
+  height: 100px;
+  background: rgb(212, 39, 59);
+}
+
+.box {
+  height: 50vw;
+  font-size: 3em;
+}
+
+.secao1 {
+  background: rgb(11, 61, 157);
+}
+
+.secao2 {
+  background: #f60;
+}
+
+
+@media (min-width: 800px) {
+  .box {
+    width: 50%;
+    float: left;
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+  .box {
+    width: 25%;
+    float: left;
+  }
+
+}
