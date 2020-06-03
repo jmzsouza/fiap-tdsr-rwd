@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  height: 80px;
+  background: #5effb6;
+  color: #fff;
+  font-size: 20px;
+}
+
+main {
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #308a61;
+}
+
+.ds-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-logo {
+  font-size: 40px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 10px;
+  color: #7d7d7d;
+}
+
+.chamada {
+  width: 45vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titulo-chamada {
+  font-size: 3em;
+  color: #5effb6;
+  font-weight: 100;
+}
+
+.texto-chamada {
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+
+.lista-chamada {
+  font-size: 1.5em;
+  font-weight: 100;
+  padding-left: 2vw;
+  line-height: 1.5em;
+}
+
+.imagem {
+  width: 40vw;
+  justify-content: flex-end;
+}
+
+.imagem img {
+  width: 100%;
+}
+
+figcaption {
+  font-size: 0.8em;
+  text-align: center;
+  color: black;
+}
+
+figcaption a {
+  color: black
+}
+
+.fundo-color {
+  background: #5effb6;
+}
+
+.fundo-color .titulo-chamada {
+  color: #fff;
+}
+
+.fundo-color p,
+.fundo-color li {
+  color: #308a61;
+}
+
+footer {
+  height: 8vh;
+  background: #5effb6;
+  color: #fff;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 8px;
+  }
+
+  header {
+    height: 65px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  .icon-logo {
+    font-size: 25px;
+    margin-left: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .chamada {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 5vh;
+  }
+
+  .texto-chamada {
+    font-size: 2em;
+  }
+
+  .lista-chamada {
+    font-size: 15px;
+    padding-left: 5vw;
+  }
+
+  .imagem {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 8px;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  .icon-logo {
+    font-size: 25px;
+    margin-left: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .chamada {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 5vh;
+  }
+
+  .titulo-chamada {
+    font-size: 2.5em;
+  }
+
+  .lista-chamada {
+    font-size: 15px;
+    padding-left: 5vw;
+  }
+
+  .imagem {
+    width: 80vw;
+  }
+}
