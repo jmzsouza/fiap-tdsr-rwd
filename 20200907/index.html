@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<title>Cartola FC</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="container-fluid my-3">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-8">
+				<h4 class="display-5">Cartola FC</h4>
+				<h5 class="display-5">Jogadores da Rodada</h5>
+				<table class="table table-striped">
+					<thead class="thead-dark">
+						<tr>
+							<th>Nome</th>
+							<th>Gols</th>
+							<th>Assistencias</th>
+							<th>Finalizações</th>
+							<th>Passes Errados</th>
+							<th>Impedimentos</th>
+							<th>Total de Pontos</th>
+							<th>Classificação</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-jogadores">
+						<tr class="jogador">
+							<td class="nome">Bruno Henrique</td>
+							<td class="gols">1</td>
+							<td class="assistencias">1</td>
+							<td class="finalizacoes">3</td>
+							<td class="passesErrados">2</td>
+							<td class="impedimentos">2</td>
+							<td class="totalPontos">0</td>
+							<td class="classificacao"></td>
+						</tr>
+						<tr class="jogador">
+							<td class="nome">Gérman Cano</td>
+							<td class="gols">2</td>
+							<td class="assistencias">0</td>
+							<td class="finalizacoes">4</td>
+							<td class="passesErrados">5</td>
+							<td class="impedimentos">6</td>
+							<td class="totalPontos">0</td>
+							<td class="classificacao"></td>
+						</tr>
+						<tr class="jogador">
+							<td class="nome">Marinho</td>
+							<td class="gols">1</td>
+							<td class="assistencias">0</td>
+							<td class="finalizacoes">3</td>
+							<td class="passesErrados">8</td>
+							<td class="impedimentos">5</td>
+							<td class="totalPontos">0</td>
+							<td class="classificacao"></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="8" class="text-center">
+								Critérios de desempate: 1º Pontos | 2º Gols | 3º Assistências<br>
+								Linha Verde => Jogador vencedor da rodada
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<!-- Formulário de dados -->
+			<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+				<h4 class="display-5">Inserir jogadores</h4>
+
+				<form action="" id="form_jogadores">
+					<div class="my-4">
+						<input type="text" id="nome" class="form-control" placeholder="Nome do jogador">
+					</div>
+					<div class="my-4">
+						<input type="text" id="gols" class="form-control" placeholder="Quantidade de gols">
+					</div>
+					<div class="my-4">
+						<input type="text" id="assistencias" class="form-control"
+							placeholder="Quantidade de assistencias">
+					</div>
+					<div class="my-4">
+						<input type="text" id="finalizacoes" class="form-control"
+							placeholder="Quantidade de finalizações">
+					</div>
+					<div class="my-4">
+						<input type="text" id="passesErrados" class="form-control"
+							placeholder="Quantidade de passes errados">
+					</div>
+					<div class="my-4">
+						<input type="text" id="impedimentos" class="form-control"
+							placeholder="Quantidade de impedimentos">
+					</div>
+					<input type="submit" value="Registar Jogador" id="btn_registrar" class="btn btn-danger btn-lg">
+				</form>
+				<ul id="mensagens_erro" class="py-3 sem-marcador">
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/calcularPontos.js"></script>
+	<script src="js/registrarJogador.js"></script>
+</body>
+
+</html>
